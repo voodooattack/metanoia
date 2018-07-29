@@ -1,6 +1,13 @@
 # Metanoia
 
-TypeScript decorators for GraphQL.
+
+[![npm](https://img.shields.io/npm/v/metanoia.svg)](https://www.npmjs.com/package/metanoia) 
+ [![GitHub license](https://img.shields.io/github/license/voodooattack/metanoia.svg)](https://github.com/voodooattack/metanoia/blob/master/LICENSE)
+ [![GitHub issues](https://img.shields.io/github/issues/voodooattack/metanoia.svg)](https://github.com/voodooattack/metanoia/issues) 
+ [![Build Status](https://travis-ci.org/voodooattack/metanoia.svg?branch=master)](https://travis-ci.org/voodooattack/metanoia) [![Coverage Status](https://coveralls.io/repos/github/voodooattack/metanoia/badge.svg)](https://coveralls.io/github/voodooattack/metanoia)
+ ![npm type definitions](https://img.shields.io/npm/types/metanoia.svg)
+
+A set of TypeScript decorators for defining a GraphQL schema directly out of your TypeScript class definitions.
 
 ### Installation
 

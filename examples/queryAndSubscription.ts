@@ -60,6 +60,7 @@ export class User extends Node {
   @builder.nonNull()
   @builder.field(GraphQLString)
   firstName: string;
+
   @builder.nonNull()
   @builder.field(GraphQLString)
   lastName: string;
