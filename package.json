@@ -1,6 +1,6 @@
 {
   "name": "metanoia",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A set of TypeScript decorators for defining a GraphQL schema directly out of your TypeScript class definitions.",
   "main": "dist/lib/index.js",
   "types": "dist/types/index.d.ts",
@@ -35,24 +35,26 @@
   },
   "homepage": "https://github.com/voodooattack/metanoia#readme",
   "peerDependencies": {
-    "graphql": "^0.13.2"
+    "graphql": "*",
+    "reflect-metadata": "*"
   },
   "devDependencies": {
-    "@types/graphql": "^0.13.3",
+    "@types/graphql": "^14.0.3",
     "@types/jest": "^23.1.6",
     "@types/node": "^10.5.2",
     "coveralls": "^3.0.2",
-    "graphql": "^0.13.2",
-    "graphql-subscriptions": "^0.5.8",
+    "graphql": "^14.0.2",
+    "graphql-subscriptions": "^1.0.0",
     "jest": "^23.4.1",
+    "jest-environment-jsdom": "^23.4.0",
     "rimraf": "^2.6.2",
     "ts-jest": "^23.0.0",
     "ts-node": "^7.0.0",
-    "tslint": "^5.10.0",
+    "tslint": "^5.12.0",
     "tslint-config-prettier": "^1.13.0",
-    "tslint-config-standard": "^7.1.0",
-    "typedoc": "^0.11.1",
-    "typescript": "^2.9.2"
+    "tslint-config-standard": "^8.0.1",
+    "typedoc": "^0.13.0",
+    "typescript": "^3.2.2"
   },
   "jest": {
     "transform": {
@@ -76,6 +78,11 @@
         "statements": 95
       }
     },
-    "collectCoverage": true
+    "collectCoverage": true,
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    }
   }
 }

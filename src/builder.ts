@@ -377,7 +377,7 @@ export class SchemaBuilder implements ISchemaBuilder {
     function convertOutputType(type: OutputType): GraphQLOutputType {
       let name;
       if (typeof type === 'function') {
-        name = type().name;
+        name = (type as Function)().name;
       }
       else if (typeof type === 'string') {
         name = type;
@@ -403,7 +403,7 @@ export class SchemaBuilder implements ISchemaBuilder {
     function convertInputType(type: InputType): GraphQLInputType {
       let name;
       if (typeof type === 'function') {
-        name = type().name;
+        name = (type as Function)().name;
       }
       else if (typeof type === 'string') {
         name = type;
